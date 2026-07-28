@@ -4,13 +4,7 @@ declare(strict_types=1);
 
 namespace HiddenItem;
 
-/**
- * Represents the game board and knows how to parse/render itself.
- *
- * Coordinates are expressed as [row, col], both 0-indexed, with row 0 at the
- * top of the grid and col 0 at the left edge. This matches how the grid is
- * read top-to-bottom, left-to-right from the ASCII layout.
- */
+
 final class Grid
 {
     public const OBSTACLE = '#';

@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace HiddenItem;
 
-/**
- * Orchestrates one play session: prints the board, calculates the probable
- * hiding spots, secretly seats the item on one of them, then lets the
- * player guess coordinates from the terminal until they find it.
- */
+
 final class Game
 {
     private Grid $grid;
