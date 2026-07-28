@@ -10,6 +10,19 @@ php index.php
 
 Requires PHP 8.1+ (uses `declare(strict_types=1)` and typed properties).
 
+## Optional: browser UI
+
+A small web wrapper around the same `Grid`/`PathFinder` logic lives in
+`public/index.php`, for visually clicking through a guess instead of typing
+into STDIN:
+
+```bash
+php -S 127.0.0.1:8124 -t public
+```
+
+Then open http://127.0.0.1:8124/. The hidden item's coordinates are kept in
+the PHP session; "Play again" starts a fresh game with a new secret cell.
+
 ## How it works
 
 1. **Grid** (`src/Grid.php`) parses the fixed ASCII layout:

@@ -45,6 +45,14 @@ php artisan migrate --seed
 php artisan serve
 ```
 
+## Demo UI
+
+Opening `/` in a browser (e.g. http://127.0.0.1:8000/) renders a minimal
+Blade page (`resources/views/store.blade.php`) that calls the JSON API with
+`fetch()`: a product grid showing live stock/flash-sale price, and a form to
+place an order. It's a thin demo shell over the same endpoints below — the
+API itself needs no frontend to be used.
+
 ## Endpoints
 
 All responses are JSON.
